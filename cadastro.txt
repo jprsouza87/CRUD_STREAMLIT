@@ -1,0 +1,4 @@
+NOME,CARGO,SALARIO,CIDADE,ESTADO
+Joao,Dev Jr,3565.73,Bauru,SP
+Pedro,Dev Sr,7997.35,São Paulo,SP
+Fernanda,Dev Pl,5347.28,Bauru,SP
