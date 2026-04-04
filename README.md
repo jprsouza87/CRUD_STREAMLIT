@@ -23,4 +23,3 @@ Aplicação web desenvolvida com **Python** e **Streamlit** para gerenciamento d
 - [Pandas](https://pandas.pydata.org/)
 
 
-## 📁 Estrutura do projeto
