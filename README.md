@@ -23,3 +23,6 @@ Aplicação web desenvolvida com **Python** e **Streamlit** para gerenciamento d
 - [Pandas](https://pandas.pydata.org/)
 
 
+## 👤 Autor
+
+João Paulo R. Souza — [github.com/jprsouza87](https://github.com/jprsouza87)
