@@ -4,6 +4,58 @@ import streamlit as st
 
 arquivo = "cadastro.txt"
 
+st.set_page_config(
+    page_title="Sistema de Cadastro de Funcionários",
+    page_icon="📋",
+    layout="centered",
+    initial_sidebar_state="collapsed",
+)
+
+st.markdown(
+    """
+    <style>
+        .stApp {
+            background: #0e1117;
+            color: #c9d1d9;
+        }
+
+        .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp label, .stApp span {
+            color: #c9d1d9;
+        }
+
+        [data-testid="stDataFrame"] {
+            background: #161b22;
+            border-radius: 10px;
+            padding: 0.25rem;
+        }
+
+        .stButton > button,
+        .stDownloadButton > button,
+        .stFormSubmitButton > button {
+            background: #1f6feb;
+            color: #ffffff !important;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        .stButton > button:hover,
+        .stDownloadButton > button:hover,
+        .stFormSubmitButton > button:hover {
+            background: #2b7cff;
+            color: #ffffff !important;
+        }
+
+        .stButton > button:focus:not(:active),
+        .stDownloadButton > button:focus:not(:active),
+        .stFormSubmitButton > button:focus:not(:active) {
+            color: #ffffff !important;
+            border: 0;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 # Carregar ou criar arquivo
 if os.path.exists(arquivo) and os.path.getsize(arquivo) > 0:
   df = pd.read_csv(arquivo)
@@ -105,3 +157,19 @@ if "funcionario" in st.session_state:
             del st.session_state["indice"]
             del st.session_state["confirmar_exclusao"]
             st.rerun()
+
+st.markdown(
+    """
+    <div style="
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid #30363d;
+        color: #8b949e;
+        font-size: 0.8rem;
+        text-align: center;
+    ">
+        Desenvolvido por João Paulo R. de Souza
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
